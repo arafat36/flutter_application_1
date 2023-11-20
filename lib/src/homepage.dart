@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/src/pages/my_page_view.dart';
 import 'package:flutter_application_1/src/sample_articles.dart';
 import 'package:flutter_application_1/src/sample_pages.dart';
+import 'package:flutter_application_1/src/webview.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -49,7 +50,11 @@ class HomePage extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(100)),
       ),
       onPressed: () {
-        _showSnackbarMessage(context, "WebView not available atm...");
+        //_showSnackbarMessage(context, "WebView not available atm...");
+        Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const WebView()),
+                );
       },
       tooltip: "Open Webview",
       isExtended: true,
