@@ -15,8 +15,8 @@ class _WebViewState extends State<WebView> {
   void initState() {
     super.initState();
     controller = WebViewController()
-      ..loadRequest(Uri.parse("https://www.oru.se/"));
-      //..setJavaScriptMode(JavaScriptMode.unrestricted);
+      ..loadRequest(Uri.parse("https://arafat36.github.io/books-react-app/"))
+      ..setJavaScriptMode(JavaScriptMode.unrestricted);
   }
 
   @override
